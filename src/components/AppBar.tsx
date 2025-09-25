@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Link from "next/link";
+import Image from "next/image"; // 
 import dynamic from 'next/dynamic';
 import React, { useState } from "react";
 import { useAutoConnect } from '../contexts/AutoConnectProvider';
@@ -20,28 +21,14 @@ export const AppBar: React.FC = () => {
       <div className="navbar flex h-20 flex-row md:mb-2 shadow-lg bg-black text-neutral-content border-b border-zinc-600 bg-opacity-66">
         <div className="navbar-start align-items-center">
           <div className="hidden sm:inline w-22 h-22 md:p-2 ml-10">
-            <Link href="/" target="_blank" rel="noopener noreferrer" passHref className="text-secondary hover:text-white">
-  <Image
-                                            src="/solanaLogo.png"
-                                            alt="solana icon"
-                                            width={156}
-                                            height={96}
-                                        />
-              
-                <defs>
-                  <linearGradient id="paint0_linear_1064_606" x1="10.81" y1="98.29" x2="98.89" y2="-1.01005" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.08" stopColor="#9945FF" />
-                    <stop offset="0.3" stopColor="#8752F3" />
-                    <stop offset="0.5" stopColor="#5497D5" />
-                    <stop offset="0.6" stopColor="#43B4CA" />
-                    <stop offset="0.72" stopColor="#28E0B9" />
-                    <stop offset="0.97" stopColor="#19FB9B" />
-                  </linearGradient>
-                  <clipPath id="clip0_1064_606">
-                    <rect width="646" height="96" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+        <Link href="/" target="_blank" rel="noopener noreferrer" passHref className="text-secondary hover:text-white">
+              {/* */}
+              <Image
+                src="/aiprice-logo.png" 
+                alt="Aiprice logo"
+                width={156}
+                height={96}
+              />
             </Link>
           </div>
           <WalletMultiButtonDynamic className="btn-ghost btn-sm relative flex md:hidden text-lg " />
