@@ -1,6 +1,6 @@
 # Aiprice - Solana Portfolio Analytics
 
-[Aiprice Screenshot](/aiprice-screenshot.png)
+![Aiprice Dashboard](/public/aiprice-screenshot.png)
 
 AI-powered portfolio tracker and analytics platform for Solana blockchain. 
 
