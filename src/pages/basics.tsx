@@ -6,7 +6,7 @@ const Basics: NextPage = (props) => {
   return (
     <div>
       <Head>
-        <title>Aiprice AI - Intelligent Solana Portfolio Analytics</title>
+        <title>Barbz Medic - AI Portfolio Health Analytics</title>
         <meta
           name="description"
           content="Basic Functionality"
