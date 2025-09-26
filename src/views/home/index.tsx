@@ -33,18 +33,18 @@ export const HomeView: FC = ({ }) => {
         <div className='mt-6'>
         <div className='text-sm font-normal align-bottom text-right text-slate-600 mt-4'>v{pkg.version}</div>
         <h1 className="text-center text-5xl md:pl-12 font-bold text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-500 mb-4">
-          Aiprice
+          Barbz Medic
         </h1>
         </div>
         <h4 className="md:w-full text-2xl md:text-4xl text-center text-slate-300 my-2">
-          <p>AI-Powered Solana Portfolio Intelligence</p>
-          <p className='text-slate-500 text-xl leading-relaxed'>Smart analytics for your digital assets</p>
+          <p>AI-Powered Portfolio Health Analytics</p>
+          <p className='text-slate-500 text-xl leading-relaxed'>Scam detection and risk assessment for your assets</p>
         </h4>
         <div className="relative group">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg blur opacity-40 animate-tilt"></div>
           <div className="max-w-md mx-auto mockup-code bg-primary border-2 border-[#5252529f] p-6 px-10 my-2">
             <pre data-prefix=">">
-              <code className="truncate">{`Welcome to the future of crypto analytics`} </code>
+              <code className="truncate">{`Scanning portfolio for potential risks...`} </code>
             </pre>
           </div>
         </div>
@@ -63,8 +63,8 @@ export const HomeView: FC = ({ }) => {
           }
           </h4>
           <p className="text-slate-400 text-center text-sm mt-4">
-            Connect your wallet to access AI-driven portfolio insights, 
-            predictive analytics, and smart asset management tools.
+            Connect your wallet to scan for scam tokens, analyze portfolio health, 
+            and get AI-powered risk assessment for your Solana assets.
           </p>
         </div>
       </div>
