@@ -7,9 +7,9 @@ const Basics: NextPage = (props) => {
     <div>
       <Head>
         <title>Barbz Medic - AI Portfolio Health Analytics</title>
-        <meta
+          <meta
           name="description"
-          content="Basic Functionality"
+          content="Explore basic functionality of Barbz Medic portfolio health analytics"
         />
       </Head>
       <BasicsView />
