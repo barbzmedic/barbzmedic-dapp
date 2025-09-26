@@ -13,7 +13,7 @@ export const Footer: FC = () => {
                                 <Link href="/" target="_blank" rel="noopener noreferrer" passHref className="text-secondary hover:text-white">
                                     <div className='flex flex-row ml-1'>
                                         <Image
-                                            src="/solanaLogo.png"
+                                            src="/logo.png"
                                             alt="solana icon"
                                             width={156}
                                             height={96}
