@@ -52,7 +52,7 @@ export const Footer: FC = () => {
                                 </a>
                             </div>
                             <div className="mb-6 m-1 sm:text-left place-items-start items-start font-normal tracking-tight text-secondary">
-                                © 2025 Aiprice AI
+                                © 2025 Barbz Medic
                             </div>
                         </div>
                     </div>
