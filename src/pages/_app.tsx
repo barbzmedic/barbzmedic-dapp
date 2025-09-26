@@ -13,7 +13,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
     return (
         <>
           <Head>
-            <title>Aiprice AI - Intelligent Solana Portfolio Analytics</title>
+            <title>Barbz Medic - AI Portfolio Health Analytics</title>
           </Head>
 
           <ContextProvider>
