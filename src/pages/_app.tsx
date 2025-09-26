@@ -13,7 +13,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
     return (
         <>
           <Head>
-            {/* Основные мета-теги */}
+            {/* Basic*/}
             <title>Barbz Medic - AI Portfolio Health Analytics</title>
             <meta name="description" content="AI-powered scam detection and portfolio health analytics for Solana. Scan your wallet for risks, detect malicious tokens, and protect your assets." />
             <meta name="keywords" content="solana, crypto, portfolio, analytics, scam detection, AI, blockchain, defi, security" />
