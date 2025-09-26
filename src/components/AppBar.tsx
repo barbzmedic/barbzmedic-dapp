@@ -24,8 +24,8 @@ export const AppBar: React.FC = () => {
         <Link href="/" target="_blank" rel="noopener noreferrer" passHref className="text-secondary hover:text-white">
               {/* */}
               <Image
-                src="/aiprice-logo.png" 
-                alt="Aiprice logo"
+                src="/logo.png" 
+                alt="Barzb Medic logo"
                 width={156}
                 height={96}
               />
