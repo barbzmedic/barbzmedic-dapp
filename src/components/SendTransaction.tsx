@@ -5,7 +5,7 @@ import { notify } from "../utils/notifications";
 
 export const SendTransaction: FC = () => {
     const { connection } = useConnection();
-    const { publicKey, sendTransaction } = useWallet();
+    const { publicKey, signTransaction } = useWallet(); // ЗАМЕНИЛИ sendTransaction на signTransaction
 
     const onClick = useCallback(async () => {
         if (!publicKey) {
@@ -37,10 +37,11 @@ export const SendTransaction: FC = () => {
             }).compileToLegacyMessage();
 
             // Create a new VersionedTransacction which supports legacy and v0
-            const transation = new VersionedTransaction(messageLegacy)
+            const transaction = new VersionedTransaction(messageLegacy)
 
-            // Send transaction and await for signature
-            signature = await sendTransaction(transation, connection);
+            // 
+            const signedTransaction = await signTransaction(transaction);
+            signature = await connection.sendRawTransaction(signedTransaction.serialize());
 
             // Send transaction and await for signature
             await connection.confirmTransaction({ signature, ...latestBlockhash }, 'confirmed');
@@ -52,7 +53,7 @@ export const SendTransaction: FC = () => {
             console.log('error', `Transaction failed! ${error?.message}`, signature);
             return;
         }
-    }, [publicKey, notify, connection, sendTransaction]);
+    }, [publicKey, notify, connection, signTransaction]); // Обновили зависимости
 
     return (
         <div className="flex flex-row justify-center">
